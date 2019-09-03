@@ -19,12 +19,12 @@ sys.path.insert(0, os.path.abspath('../'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'e-machine'
-copyright = '2019, Danh-Tai Hoang'
-author = 'Danh-Tai Hoang'
+project = u'e-machine'
+copyright = u'2019, Danh-Tai Hoang'
+author = u'Danh-Tai Hoang'
 
 # The short X.Y version
-version = ''
+version = u''
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
 
@@ -99,6 +99,11 @@ html_theme_path = ['theme']
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {
+    'rootlinks':
+    (("https://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LBM",
+      "LBM"), ("https://github.com/nihcompmed", "NIHCOMPMED"))
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -114,7 +119,12 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-
+html_sidebars = {
+    '**': [
+        'relations.html',  # needs 'show_related': True theme option to display
+        'searchbox.html',
+    ]
+}
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -175,7 +185,7 @@ texinfo_documents = [
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
+#epub_title = project
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
@@ -187,7 +197,7 @@ epub_title = project
 # epub_uid = ''
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
+#epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
@@ -195,4 +205,4 @@ epub_exclude_files = ['search.html']
 # -- Options for intersphinx extension ---------------------------------------
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+#intersphinx_mapping = {'https://docs.python.org/': None}
