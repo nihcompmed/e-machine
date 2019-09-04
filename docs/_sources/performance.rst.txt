@@ -1,6 +1,6 @@
 .. _performance:
 
-Performance Comparision
+Performance
 -----------------------
 .. toctree::
     :maxdepth: 2

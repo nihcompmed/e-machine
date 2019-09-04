@@ -19,9 +19,9 @@ sys.path.insert(0, os.path.abspath('../'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'e-machine'
-copyright = u'2019, Danh-Tai Hoang'
-author = u'Danh-Tai Hoang'
+project = 'e-machine'
+copyright = '2019, Danh-Tai Hoang'
+author = 'Danh-Tai Hoang'
 
 # The short X.Y version
 version = u''
@@ -39,21 +39,14 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 #extensions = [
-#    'sphinx.ext.autodoc',
-#    'sphinx.ext.doctest',
-#    'sphinx.ext.intersphinx',
-#    'sphinx.ext.coverage',
 #    'sphinx.ext.imgmath',
-#    'sphinx.ext.ifconfig',
-#    'sphinx.ext.viewcode',
-#    'sphinx.ext.githubpages',
 #]
-
 extensions = [
     'sphinx.ext.autodoc', 'sphinx.ext.mathjax', 'sphinx.ext.githubpages',
     'sphinx.ext.viewcode', 'sphinx.ext.napoleon', 'nbsphinx',
     'matplotlib.sphinxext.plot_directive'
 ]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -99,6 +92,7 @@ html_theme_path = ['theme']
 # documentation.
 #
 # html_theme_options = {}
+
 html_theme_options = {
     'rootlinks':
     (("https://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LBM",
@@ -160,6 +154,7 @@ latex_documents = [
      'Danh-Tai Hoang', 'manual'),
 ]
 
+
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -201,8 +196,3 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
-
-# -- Options for intersphinx extension ---------------------------------------
-
-# Example configuration for intersphinx: refer to the Python standard library.
-#intersphinx_mapping = {'https://docs.python.org/': None}
