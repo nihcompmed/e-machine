@@ -50,7 +50,6 @@ def generate_seq(n_var,n_seq,n_sample=30,g=1.0):
 def fit(ops,eps=0.1,max_iter=151,alpha=0.1):
     E_av = np.zeros(max_iter)
     n_ops = ops.shape[1]
-    cov_inv = np.eye(ops.shape[1])
 
     np.random.seed(13)
     w = np.random.rand(n_ops)-0.5    
@@ -67,8 +66,8 @@ def fit(ops,eps=0.1,max_iter=151,alpha=0.1):
         probs_w /= z_data
         ops_expect_w = np.sum(probs_w[:,np.newaxis]*ops,axis=0)
 
-        E_av[i] = energies_w.mean()
-        w += alpha*cov_inv.dot((ops_expect_w - w*eps))        
+        E_av[i] = energies_w.mean()    
+        w += alpha*(ops_expect_w - w*eps)
               
     return w,-E_av[-1]
 #=========================================================================================
