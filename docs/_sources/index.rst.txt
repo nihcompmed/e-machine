@@ -11,6 +11,7 @@ Table of Contents
    codesource/emachine.ipynb
    performance 
    codesource/computingtime.ipynb
-   codesource/application.ipynb
+   codesource/imputation.ipynb
+   codesource/imagereconstraction.ipynb
 
 .. include:: ../README.rst

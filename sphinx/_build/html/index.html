@@ -30,7 +30,7 @@
     <link rel="index" title="Index" href="genindex.html" >
     <link rel="search" title="Search" href="search.html" >
     <link rel="top" title="e-machine 0.0.1 documentation" href="#" >
-    <link rel="next" title="\(\epsilon\)-machine" href="codesource/emachine.html" > 
+    <link rel="next" title="Erasure Machine" href="codesource/emachine.html" > 
   </head>
   <body>
 
@@ -60,7 +60,7 @@
            accesskey="I">index</a>
       </li>
       <li class="active">
-        <a href="codesource/emachine.html" title="\(\epsilon\)-machine"
+        <a href="codesource/emachine.html" title="Erasure Machine"
            accesskey="N">next</a>
       </li>
     </ul>
@@ -75,7 +75,7 @@
         <div class="sphinxsidebarwrapper">
   <h4>Next topic</h4>
   <p class="topless"><a href="codesource/emachine.html"
-                        title="next chapter"><span class="math notranslate nohighlight">\(\epsilon\)</span>-machine</a></p>
+                        title="next chapter">Erasure Machine</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <div class="searchformwrapper">
@@ -99,7 +99,7 @@
 <h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="codesource/emachine.html"><span class="math notranslate nohighlight">\(\epsilon\)</span>-machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codesource/emachine.html">Erasure Machine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="performance.html">Performance</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="codesource/smallsystem.html">Small system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="codesource/largesystem.html">Large system</a></li>
@@ -107,16 +107,23 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="codesource/computingtime.html">Computing time</a></li>
-<li class="toctree-l1"><a class="reference internal" href="codesource/application.html">Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codesource/imputation.html">Missing Data Imputation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="codesource/imputation.html#Splitting-the-data-into-training-samples-and-test-samples">Splitting the data into training samples and test samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codesource/imputation.html#Inferring-the-local-fiels-and-pairwise-interactions-with-the-training-samples">Inferring the local fiels and pairwise interactions with the training samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codesource/imputation.html#Imputing-missing-values-of-the-test-samples">Imputing missing values of the test samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codesource/imputation.html#Performance-comparison-with-PLE">Performance comparison with PLE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="codesource/imagereconstraction.html">Image Reconstruction</a></li>
 </ul>
 </div>
-<div class="section" id="epsilon-machine">
-<h2>Epsilon Machine<a class="headerlink" href="#epsilon-machine" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="erasure-machine">
+<h2>Erasure Machine<a class="headerlink" href="#erasure-machine" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>This work was designed to develop an algorithm, epsilon-machine (e-machine), for network inference from non-time series data. The key idea of our method is reweighting the observed configurations to make their frequencies equally likely. We show that this inference outperforms previous methods, especilly in the regime of strong interaction and/or small sample size of observations.</p>
+<p>This work was designed to develop an algorithm, Erasure Machine (EM), for network inference from non-time series data. The key idea of our method is reweighting the observed configurations to make their frequencies equally likely. We show that this inference outperforms previous methods, especilly in the regime of strong interaction and/or small sample size of observations.</p>
 </div>
 <div class="section" id="interactive-notebook">
 <h1>Interactive notebook<a class="headerlink" href="#interactive-notebook" title="Permalink to this headline">¶</a></h1>

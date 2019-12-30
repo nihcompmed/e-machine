@@ -1,9 +1,9 @@
-Epsilon Machine
+Erasure Machine
 ======================================================
 
 Introduction
 ------------------------------
-This work was designed to develop an algorithm, epsilon-machine (e-machine), for network inference from non-time series data. The key idea of our method is reweighting the observed configurations to make their frequencies equally likely. We show that this inference outperforms previous methods, especilly in the regime of strong interaction and/or small sample size of observations.
+This work was designed to develop an algorithm, Erasure Machine (EM), for network inference from non-time series data. The key idea of our method is reweighting the observed configurations to make their frequencies equally likely. We show that this inference outperforms previous methods, especilly in the regime of strong interaction and/or small sample size of observations.
 
 Interactive notebook
 -----------------------------

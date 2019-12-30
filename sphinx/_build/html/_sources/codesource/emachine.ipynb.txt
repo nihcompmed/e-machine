@@ -4,9 +4,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## $\\epsilon$-machine\n",
+    "## Erasure Machine\n",
     "\n",
-    "We will test the performance of our method, $\\epsilon$-machine (EM), in inferring couplings $W_{ij}$ from synthetic data.\n",
+    "We will test the performance of our method, Erasure Machine (EM), in inferring couplings $W_{ij}$ from synthetic data.\n",
     "\n",
     "First of all, we import the necessary packages to the Jupyter notebook:"
    ]
